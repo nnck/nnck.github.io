@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16;
+}
+
+body {
+  font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+  font-size: inherit;
+  color: #6a6969;
+}
+
+H1 {
+  font-family: Korolev;
+  font-weight: bold;
+  font-size: 32pt;
+}
+p {
+  font-family: Sofia Pro;
+
+  font-size: 15pt;
+}
+.info-container {
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  margin-left:1%;
+}
+
+.page_wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  padding: 20px;
+}
+
+
+
+
+
+.content {
+  width: 100%;
+  float: left;
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 1;
+  margin-top: 6%;
+
+}
+
+.item {
+  background: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  width: 31%;
+  min-width:500px;
+  height: 400px;
+  float: left;
+margin: 0 1%;
+  margin-bottom: 50px;
+  box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+  border-radius: 16px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  overflow: hidden;
+}
+
+
+.show {
+float: left;
+width: 10em;
+display:none;
+}
+
+.item:hover #show {
+float: left;
+display:block;
+}
+
+li {
+float: left;
+
+}
+
+  li ul {
+  display: none;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  }
+
+  li > ul {
+ top: auto;
+ left: auto;
+ }
+
+ li:hover ul { display: block; }
